@@ -6,17 +6,17 @@ namespace AlgorithmProblem
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Data Structures And Alogorithm Programs...");
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the values to Execute the Program Press\n1.Bubble sort\n2.Exit");
-                int choice = Convert.ToInt32(Console.ReadLine());
-                switch (choice)
-                {
+                Console.WriteLine("\n Choose an Option :\n 1.Anagram\n 2.Exit\n");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {             
                     case 1:
-                        int[] arr1 = { 55, 7, 87, 2, 3, 55, 5 };
-                        Bubblesort.BubbleSortInArray(arr1);
-                        Bubblesort.PrintArray(arr1);
+                        Anagram check = new Anagram();
+                        check.AnagramCheck();
                         break;
                     case 2:
                         flag = false;
